@@ -38,7 +38,7 @@ connection.getConnectionString = function (mongo) {
 		servers.push(`${hosts[i]}:${ports[i]}`);
 	}
 
-	return uri || `mongodb://${usernamePassword}${servers.join()}/${mongo.database}`;
+	return uri || `mongodb+srv://${usernamePassword}${servers.join()}/${mongo.database}`;
 };
 
 connection.getConnectionOptions = function (mongo) {
